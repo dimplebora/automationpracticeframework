@@ -1,3 +1,4 @@
+@smoke
 Feature: Practice page automation
 Scenario: Extract Static Web Table Data
  
