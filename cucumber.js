@@ -6,6 +6,10 @@ module.exports = {
     ],
     paths: [
       'features/*.feature'
+    ],
+    format: [
+      'progress',
+      'json:myreports/cucumber-report.json'
     ]
   }
 }

@@ -1,0 +1,189 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "practice-page-automation;submit-data-entry-form",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Submit Data Entry Form",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 192988900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "user launches the practice website",
+            "match": {
+              "location": "step-definitions\\dataEntry.steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4070959899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "user fills the data entry form with valid details",
+            "match": {
+              "location": "step-definitions\\dataEntry.steps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 228571899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "user submits the form",
+            "match": {
+              "location": "step-definitions\\dataEntry.steps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 46356899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "user form data should be entered successfully",
+            "match": {
+              "location": "step-definitions\\dataEntry.steps.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18216399
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 61881800
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "practice-page-automation",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Practice page automation",
+    "tags": [
+      {
+        "name": "@regression",
+        "line": 1
+      }
+    ],
+    "uri": "features\\dataEntryForm.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "practice-page-automation;extract-static-web-table-data",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Extract Static Web Table Data",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 158848399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "user is on the practice website",
+            "match": {
+              "location": "step-definitions\\table.steps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5879361999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "user reads all rows from the Static Web Table",
+            "match": {
+              "location": "step-definitions\\table.steps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 64345300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "book details should be saved into Excel file",
+            "match": {
+              "location": "step-definitions\\table.steps.js:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 70529199
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 88555000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "practice-page-automation",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Practice page automation",
+    "tags": [
+      {
+        "name": "@smoke",
+        "line": 1
+      }
+    ],
+    "uri": "features\\staticWebTable.feature"
+  }
+]
