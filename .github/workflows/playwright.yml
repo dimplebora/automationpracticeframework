@@ -1,6 +1,16 @@
 name: Playwright Cucumber Tests
 
 on:
+workflow_dispatch:
+    inputs:
+      tag:
+        description: "Cucumber Tag"
+        type: choice
+        options:
+          - "@smoke"
+          - "@regression"
+          - "@sanity"
+          - "@api"
   push:
     branches: [main, master]
   pull_request:
