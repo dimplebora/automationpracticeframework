@@ -1,4 +1,4 @@
-class StaticTablePage {
+class StaticWebTablePage {
     constructor(page) {
         this.page = page;
         this.rows = page.locator("//table[@name='BookTable']/tbody/tr");
@@ -9,8 +9,9 @@ class StaticTablePage {
 
         const rowCount = await this.rows.count();
 
-        for (let i = 1; i < rowCount; i++) {
+        for (let i = 0; i < rowCount; i++) {
             const cells = await this.rows.nth(i).locator("td").allTextContents();
+            //if (cells.length < 4 || !cells[0]) continue;
 
             books.push({
                 BookName: cells[0],
@@ -24,4 +25,4 @@ class StaticTablePage {
     }
 }
 
-module.exports = StaticTablePage;
+module.exports = StaticWebTablePage;

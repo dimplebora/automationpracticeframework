@@ -4,16 +4,18 @@ const { expect } = require('@playwright/test')
 const StaticWebTablePage = require('../pages/StaticWebTablePage')
 const ExcelUtil = require('../utils/ExcelUtil.js')
 let staticWebTablePage
+let excelUtil
+let tableData
 
 Given('user is on the practice website', async function () {
   await this.page.goto('https://testautomationpractice.blogspot.com/');
 
-  staticTablePage = new StaticTablePage(this.page);
+  staticWebTablePage = new StaticWebTablePage(this.page);
   excelUtil = new ExcelUtil();
 })
 
 When('user reads all rows from the Static Web Table', async function () {
-  tableData = await staticTablePage.getTableData();
+  tableData = await staticWebTablePage.getTableData();
 
   console.log("Table Data:");
   console.table(tableData);
