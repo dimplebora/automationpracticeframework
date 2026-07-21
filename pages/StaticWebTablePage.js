@@ -9,7 +9,7 @@ class StaticWebTablePage {
 
         const rowCount = await this.rows.count();
 
-        for (let i = 0; i < rowCount; i++) {
+        for (let i = 1; i < rowCount; i++) {
             const cells = await this.rows.nth(i).locator("td").allTextContents();
             //if (cells.length < 4 || !cells[0]) continue;
 
