@@ -14,7 +14,7 @@ Before({ timeout: 60 * 1000 }, async function () {
 })
 
 After(async function () {
- 
-    await this.browser.close()
-  
-})
+    if (this.browser) {
+        await this.browser.close();
+    }
+});
