@@ -1,0 +1,25 @@
+{
+  "name": "framework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js",
+    "report": "node report.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@azure/identity": "^4.13.1",
+    "@azure/playwright": "^1.1.6",
+    "@cucumber/cucumber": "^13.1.1",
+    "@playwright/test": "^1.61.1",
+    "@types/node": "^26.1.1",
+    "cucumber-html-reporter": "^7.2.0"
+  },
+  "dependencies": {
+    "exceljs": "^4.4.0"
+  }
+}
