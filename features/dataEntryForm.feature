@@ -1,3 +1,4 @@
+@regression
 Feature: Practice page automation
 Scenario: Submit Data Entry Form
  
